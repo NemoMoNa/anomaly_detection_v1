@@ -1,0 +1,21 @@
+{
+  "project": "anomaly_detection_v1",
+  "run_name": "anomaly_detection_minimal_v1",
+  "input_csv": "/Users/mh/Downloads/Mini Project/202604/anomaly_detection_v1/data/server_metrics.csv",
+  "time_col": "timestamp",
+  "label_col": "label",
+  "numeric_cols": [
+    "cpu_pct",
+    "latency_ms"
+  ],
+  "feature_cols": [
+    "cpu_pct",
+    "latency_ms",
+    "cpu_pct_diff1",
+    "latency_ms_diff1"
+  ],
+  "models": [
+    "zscore",
+    "isolation_forest"
+  ]
+}
